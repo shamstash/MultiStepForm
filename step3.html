@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<main id="mainDiv">
+<section id="leftMenu">
+  <div class="menuOptions">
+    <h4 class="menuOptionsNum">1</h4>
+    <div>
+    <h5 class="stepTitle">STEP 1</h5>
+    <h4 class="stepName">YOUR INFO</h4>
+   </div>
+  </div>
+  <div class="menuOptions">
+    <h4 class="menuOptionsNum" >2</h4>
+    <div>
+    <h5 class="stepTitle">STEP 2</h5>
+    <h4 class="stepName">SELECT PLAN</h4>
+  </div>
+  </div>
+  <div class="menuOptions">
+    <h4 class="menuOptionsNum" style="background: hsl(217, 100%, 97%); color: #483eff;">3</h4>
+    <div>
+    <h5 class="stepTitle">STEP 3</h5>
+    <h4 class="stepName">ADD-ONS</h4>
+  </div>
+  </div>
+  <div class="menuOptions">
+    <h4 class="menuOptionsNum">4</h4>
+    <div>
+    <h5 class="stepTitle">STEP 4</h5>
+    <h4 class="stepName">SUMMARY</h4>
+  </div>
+  </div>
+</section>
+<div id="outerFormContainer">
+<form id="form" style="height: 340px;">
+  <h1 class="bigTitle" style="margin-bottom: 11px;">Pick add-ons</h1>
+  <h4 style="margin-bottom: 20px;color: hsl(231, 11%, 63%);
+  font-weight: 400;">Add-ons help enhance your gaming experience</h4>
+  <div id="plansContainer" style="flex-direction: column;">
+    <div class="plan addOns" id="onlineServiceContainer">
+        <input type="checkbox" class="checkBox" id="onlineServiceCheck">
+        <div class="addOnsMidText">
+        <h4 class="planTitle">Online service</h4>
+        <h4 class="planPricing">Access to multiplayer games</h4>
+    </div>
+        <h4 class="addOnPrice">+$1/mo</h4>
+    </div>
+    <div class="plan addOns" id="largerStorageContainer">
+        <input type="checkbox" class="checkBox" id="largerStorageCheck">
+        <div class="addOnsMidText">
+        <h4 class="planTitle">Larger storage</h4>
+        <h4 class="planPricing">Extra 1TB of cloud save</h4>
+    </div>
+    <h4 class="addOnPrice">+$2/mo</h4>
+    </div>
+    <div class="plan addOns" id="customizableProfileContainer">
+        <input type="checkbox" class="checkBox" id="customizableProfileCheck">
+        <div class="addOnsMidText">
+        <h4 class="planTitle">Customizable profile</h4>
+        <h4 class="planPricing">Custom theme on your profile</h4>
+    </div>
+    <h4 class="addOnPrice">+$2/mo</h4>
+    </div>
+  </div>
+
+
+
+</form>
+<div id="buttonsDiv">
+<button id="goBackBtn">Go Back</button>
+<button type="submit" id="subButton">Next Step</button>
+</div>
+</div>
+</main>
+
+<script src="script2.js"></script>
+</body>
+</html>
