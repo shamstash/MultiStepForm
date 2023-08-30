@@ -2,6 +2,7 @@ let sliderCont = document.querySelector("#sliderContainer")
 let slider = document.querySelector("#slider")
 let pricings = document.querySelectorAll(".planPricing")
 let plans = document.querySelectorAll(".plan")
+let plansDiv = document.querySelectorAll(".plansDiv")
 let submitButton = document.querySelector("#subButton")
 let goBackBtn = document.querySelector("#goBackBtn")
 let arcade = document.querySelector("#arcade")
@@ -59,7 +60,7 @@ function sliderOnYear(){
 
     const p = document.createElement("h5")
     p.innerText = "2 Months free"
-    plans.forEach(plan =>{
+    plansDiv.forEach(plan =>{
         plan.appendChild(p.cloneNode(true))}
         )
         
@@ -74,7 +75,7 @@ function sliderOnMonth() {
     pricings[1].innerText = "$12/mo";
     pricings[2].innerText = "$15/mo";
 
-    plans.forEach(plan => {
+    plansDiv.forEach(plan => {
         const labels = plan.querySelectorAll("h5")
         labels.forEach(label => {
             if (label.innerText === "2 Months free") {

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="phone.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Multi-step form</title>
@@ -50,26 +51,26 @@
 <div id="outerFormContainer">
 <form id="form" style="height: 340px;">
   <h1 class="bigTitle" style="margin-bottom: 11px;">Select your plan</h1>
-  <h4 style="margin-bottom: 40px;color: hsl(231, 11%, 63%);
+  <h4 id="subTitle" style="margin-bottom: 40px;color: hsl(231, 11%, 63%);
   font-weight: 400;">You have the option of monthly and yearly billing.</h4>
   <div id="plansContainer">
     <div class="plan" id="arcade">
         <img class="icon" src="assets/images/icon-arcade.svg" alt="">
-        <div>
+        <div class="plansDiv">
         <h4 class="planTitle">Arcade</h4>
         <h4 class="planPricing">$9/mo</h4>
     </div>
     </div>
     <div class="plan" id="advanced">
         <img class="icon" src="assets/images/icon-advanced.svg" alt="">
-        <div>
+        <div class="plansDiv">
         <h4 class="planTitle">Advanced</h4>
         <h4 class="planPricing">$12/mo</h4>
     </div>
     </div>
     <div class="plan" id="pro">
         <img class="icon" src="assets/images/icon-pro.svg" alt="">
-        <div>
+        <div class="plansDiv">
         <h4 class="planTitle">Pro</h4>
         <h4 class="planPricing">$15/mo</h4>
     </div>

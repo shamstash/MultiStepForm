@@ -7,75 +7,87 @@
     font-family: 'Ubuntu',sans-serif;
 }
 
-@media (min-width: 880px) {
+@media (max-width: 880px) {
+
 html {
     background: hsl(217, 100%, 97%);
    
 }
 
 body {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+    /* background: red; */
 }
 
 #mainDiv {
     background: white;
     border-radius: 10px;
-    width: 850px;
-    height: 600px;
+    /* width: 850px; */
+    /* height: 100vh; */
     display: flex;
+    flex-direction: column;
 }
 
 .menuOptions {
-    margin-top: 10px;
-    width: 250px;
+    /* margin-top: 10px; */
+    /* width: 250px; */
+    height: 15vh;
     display: flex;
     align-items: center;
 }
 
 #leftMenu {
     background-image: url("assets/images/bg-sidebar-desktop.svg");
-    height: 94%;
-    width: 270px;
+    background-size: cover;
+    height: 27vh;
+    width: 100%;
     display: flex;
+    background-position-y: 89%;
     align-self: center;
-    border: 1px solid black;
-    flex-direction: column;
-    margin-left: 16.5px;
-    padding: 10px;
-    border-radius: 10px;
+    flex-direction: row;
     border: none;
     color: white;
+    justify-content: center;
 }
 
 .menuOptionsNum {
-    margin: 14px;
+    margin: 7px;
     border: 1px solid white;
     border-radius: 150%;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 9.5px;
     padding-left: 9.5px;
-    
 }
 
 #outerFormContainer {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    margin-bottom: 0;
-    margin-top: 60px;
+    width: 90%;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 13.8vh;
+    padding: 20px;
+    padding-top: 25px;
 }
 
 #form {
     display: flex;
-    width: 443px;
     flex-direction: column;
+    height: 375px !important
+
 }
 
 .bigTitle {
+    font-size: 27px;
     color: hsl(213, 96%, 18%);
 }
 
@@ -97,10 +109,12 @@ body {
     font-weight: 400;
     color: hsl(231, 11%, 75%);
     margin-bottom: 2px;
+    display: none;
 }
 
 .stepName {
     letter-spacing: 1px;
+    display: none;
 }
 
 ::placeholder{
@@ -135,34 +149,41 @@ body {
 }
 
 #plansContainer {
-    display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     justify-content: space-between;
 }
 
 .plan {
     border: 2px solid hsl(229, 24%, 87%);
     border-radius: 10px;
-    width: 135px;
     cursor: pointer;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
     padding: 15px;
+    
+    margin: 10px 0 10px 0;
+}
+
+#subTitle {
+    margin-bottom: 15px !important
+}
+
+.plan div {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 15px;
 }
 
 .icon {
     width: 40px;
     height: 40px;
-    margin-bottom: 50px;
 }
 
 .planPricing {
     font-weight: 400;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 3px;
     color: hsl(231, 11%, 63%);
-    font-size: 14px;
+    font-size: 12.5px;
 }
 
 #monthYearSlider {
@@ -172,6 +193,7 @@ body {
     background: hsl(229, 24%, 96%);
     justify-content: center;
     padding: 10px;
+    border-radius: 10px;
 }
 
 #sliderContainer {
@@ -197,6 +219,10 @@ body {
 .selectedPlan {
     background: hsl(229, 24%, 96%);
     border: 2px solid hsl(243, 100%, 62%);
+}
+
+.planTitle {
+    font-size: 14px;
 }
 
 .planTitle, .plan h5 {
@@ -225,14 +251,16 @@ body {
 .addOns {
     width: auto;
     flex-direction: initial;
-    padding: 20px;
     margin-top: 15px;
+    padding-bottom: 7px;
+    padding-top: 7px;
 }
 
 .addOnsMidText {
     flex-direction: inherit;
     width: 70%;
     padding-left: 4%;
+    margin-left: 0 !important
 }
 
 .checkBox {
@@ -241,12 +269,12 @@ body {
 }
 
 .addOnPrice {
-    width: 15%;
     display: flex;
     align-items: center;
-    justify-content: center;
     color: hsl(243, 100%, 62%);
     font-weight: 400;
+    margin-left: 10px;
+    font-size: 14px;
 }
 #changeBtn {
     text-decoration: underline;
@@ -258,12 +286,7 @@ body {
 #innerUpper {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
-    padding-left: 0;
-    padding-right: 0;
-    width: 90%;
-    margin: auto;
-    padding-bottom: 30px;
+
 }
 
 #confirmationAddOnContainer {
@@ -274,7 +297,6 @@ body {
 #middleLine {
     border: 1px solid;
     border-top: 0;
-    width: 90%;
     margin: auto;
     border-color: hsl(231, 11%, 85%);
 }
@@ -282,14 +304,14 @@ body {
 #confirmationDivContainer {
     border-radius: 10px;
     background: hsl(229, 24%, 96%);
+    padding: 15px
+}
+#confirmationDiv {
+    padding-bottom: 15px;
 }
 
 #confirmationAddOnContainer {
-    padding: 15px;
-    padding-left: 0;
-    padding-right: 0;
-    width: 90%;
-    margin: auto;
+    padding-top: 20px;
 }
 
 #addOnTitle {
@@ -350,7 +372,7 @@ body {
     line-height: 25px; 
 }
 #thanksScreen img {
-    width: 70px;
+    width: 55px;
     margin-bottom: 30px;
      
 }
@@ -358,11 +380,29 @@ body {
 #lastPage {
     display: flex;
     flex-direction: column;
-    
+   
 }
 
+#lastPageOuterFormContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 13.8vh;
+    /* padding: 20px; */
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
 
-
+#lastPageH1 {
+    font-size: 27px;
+}
 
 
 }
