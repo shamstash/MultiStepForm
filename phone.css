@@ -252,6 +252,7 @@ body {
     width: auto;
     flex-direction: initial;
     margin-top: 15px;
+    align-items: center;
     padding-bottom: 7px;
     padding-top: 7px;
 }
